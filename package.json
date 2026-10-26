@@ -1,0 +1,14 @@
+{
+  "name": "posse-pop",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "prepare": "node tools/prepare-assets.mjs",
+    "pretest": "npm run prepare",
+    "test": "node --test tests/*.test.mjs",
+    "start": "node tools/serve.mjs",
+    "verify:site": "node tools/verify-site.mjs"
+  }
+}
